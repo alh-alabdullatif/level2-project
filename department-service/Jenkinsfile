@@ -32,10 +32,10 @@ spec:
     }
   }
   environment {
-    CREDS = credentials('bryan_docker_creds')
-    DOCKER_NAMESPACE = 'bryandollery'
+    CREDS = credentials('docker-cred')
+    DOCKER_NAMESPACE = 'rahafog1'
     SERVICE_NAME = 'department-service'
-    TOKEN=credentials('tester_token')
+    TOKEN=credentials('	9ff684eb-28cc-4790-bcdd-9710d1ebbb04')
   }
   stages {
       stage("Build") {
