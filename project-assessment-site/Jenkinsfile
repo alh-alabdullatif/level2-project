@@ -6,7 +6,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    service_name: project-assessment-site-service
+    service_name: project-assessment-site
     service_type: REST
 spec:
   containers:
@@ -34,7 +34,7 @@ spec:
   environment {
     CREDS = credentials('Alhanouf-docker-creds')
     DOCKER_NAMESPACE = 'alhanouf1'
-    SERVICE_NAME = 'project-assessment-site-service'
+    SERVICE_NAME = 'project-assessment-site'
     TOKEN=credentials('8388af76-c8b3-4f82-9aa7-f46e190a5684')
   }
   stages {
