@@ -64,6 +64,8 @@ spec:
                   sh '''
                       cd $SERVICE_NAME
                       kubectl --token=$TOKEN -n test apply -f deploy.yaml -f service.yaml
+                      kubectl apply -f ../ingressfile.yaml
+
                   '''
               }
           }
