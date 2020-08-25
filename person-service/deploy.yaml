@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: department-service
+  name: person-service
   namespace: test
   labels:
-    app: department-service
+    app: person-service
     type: api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: department-service
+      app: person-service
   template:
     metadata:
       labels:
-        app: department-service
+        app: person-service
     spec:
       containers:
-      - name: department-service
-        image: alhanouf1/department-service
+      - name: person-service
+        image: alhanouf1/person-service
         ports:
         - containerPort: 80
