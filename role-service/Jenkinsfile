@@ -35,7 +35,7 @@ spec:
     CREDS = credentials('Alhanouf-docker-creds')
     DOCKER_NAMESPACE = 'alhanouf1'
     SERVICE_NAME = 'role-service'
-    TOKEN=credentials('8388af76-c8b3-4f82-9aa7-f46e190a5684')
+    TOKEN=credentials('d48a9eb2-c648-4a19-90ea-3f845349c49b')
   }
   stages {
       stage("Build") {
