@@ -6,7 +6,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    service_name: project-assesment-site
+    service_name: project-assessment-site
     service_type: REST
 spec:
   containers:
@@ -34,7 +34,7 @@ spec:
   environment {
     CREDS = credentials('docker-creds')
     DOCKER_NAMESPACE = 'rahafog1'
-    SERVICE_NAME = 'project-assesment-site'
+    SERVICE_NAME = 'project-assessment-site'
     TOKEN=credentials('29557ba2-a12f-4396-a88c-64360a219af7')
   }
   stages {
