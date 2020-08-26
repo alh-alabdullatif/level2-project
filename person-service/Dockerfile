@@ -2,7 +2,7 @@ from bryandollery/maven-repo as build
 
 arg rebuild
 
-run git clone https://github.com/BYAT/level2-project.git && \
+run git clone https://github.com/rahafog/level2-project.git && \
     cd /root/level2-project/person-service && \
     mvn clean package -DskipTests
 
