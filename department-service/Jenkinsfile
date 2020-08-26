@@ -35,7 +35,7 @@ spec:
     CREDS = credentials('docker-creds')
     DOCKER_NAMESPACE = 'rahafog1'
     SERVICE_NAME = 'department-service'
-    TOKEN=credentials('29557ba2-a12f-4396-a88c-64360a219af7')
+    TOKEN=credentials('be58ac6f-89ae-461a-989c-f70b29b78f20')
   }
   stages {
       stage("Build") {
