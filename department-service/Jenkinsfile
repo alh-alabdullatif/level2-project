@@ -32,7 +32,7 @@ spec:
     }
   }
   environment {
-    CREDS = credentials('docker-cred')
+    CREDS = credentials('docker-creds')
     DOCKER_NAMESPACE = 'rahafog1'
     SERVICE_NAME = 'department-service'
     TOKEN=credentials('29557ba2-a12f-4396-a88c-64360a219af7')
