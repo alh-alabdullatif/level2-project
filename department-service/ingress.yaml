@@ -1,6 +1,5 @@
-apiVersion: extensions/v1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
-apiVersion: extensions/v1beta1
 metadata:
   name: "department-ingress"
   namespace: test
