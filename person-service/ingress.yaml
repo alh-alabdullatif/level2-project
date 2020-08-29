@@ -1,0 +1,16 @@
+apiVersion: extensions/v1
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: "person-ingress"
+  namespace: test
+
+spec:
+  rules:
+    - host:
+      http:
+        paths:
+          - path: /person
+            backend:
+              serviceName: person-service
+              servicePort: 80
