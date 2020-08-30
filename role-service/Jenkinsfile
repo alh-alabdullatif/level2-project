@@ -34,7 +34,7 @@ spec:
   environment {
     CREDS = credentials('rho-team-docker')
     DOCKER_NAMESPACE = 'alhanouf1'
-    SERVICE_NAME = 'person-service'
+    SERVICE_NAME = 'role-service'
     TOKEN=credentials('06d1d01b-54b3-4121-a7e9-5bbe4fb2bb56')
   }
   stages {
