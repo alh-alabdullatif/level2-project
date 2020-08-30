@@ -35,7 +35,7 @@ spec:
     CREDS = credentials('docker-creds')
     DOCKER_NAMESPACE = 'rahafog1'
     SERVICE_NAME = 'office-service'
-    TOKEN=credentials('7c5cecca-9118-4fe0-8858-43ea390c24c4')
+    TOKEN=credentials('	7014634c-e78d-4267-ae85-57217ba1d17e')
    }
    stages {
       stage("Build") {
@@ -63,7 +63,7 @@ spec:
               container('kubectl') {
                   sh '''
                       cd $SERVICE_NAME
-                      kubectl --token=$TOKEN -n test apply -f deploy.yaml -f service.yaml
+                      kubectl --token=$TOKEN -n test apply -f namespace.yaml -f deploy.yaml -f service.yaml
                   '''
               }
           }
