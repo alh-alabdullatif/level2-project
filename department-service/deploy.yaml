@@ -13,7 +13,7 @@ spec:
       app: department-service
   template:
     metadata:
-      labels:
+labels:
         app: department-service
     spec:
       containers:
