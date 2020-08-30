@@ -32,10 +32,10 @@ spec:
     }
   }
   environment {
-    CREDS = credentials('Alhanouf-docker-creds')
+    CREDS = credentials('rho-team-docker')
     DOCKER_NAMESPACE = 'alhanouf1'
-    SERVICE_NAME = 'role-service'
-    TOKEN=credentials('06d1d01b-54b3-4121-a7e9-5bbe4fb2bb56')
+    SERVICE_NAME = 'person-service'
+    TOKEN=credentials('002163be-6c2f-4a1a-9f8f-2844b1455a44')
   }
   stages {
       stage("Build") {
