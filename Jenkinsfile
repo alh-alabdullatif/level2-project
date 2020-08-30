@@ -23,7 +23,7 @@ spec:
     AWS_SECRET_ACCESS_KEY = "${CREDS_PSW}"
     OWNER = 'rho'
     PROJECT_NAME = 'rho-web-server'
-    TOKEN=credentials('356d651c-c18a-4776-b8c5-b1fc0e217eef')
+    TOKEN=credentials('0c8899ba-7c49-4de5-859f-01d6f1584075')
   }
   stages {
       stage("build") {
