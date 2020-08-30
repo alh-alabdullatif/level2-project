@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: department-service
-  namespace: test
   labels:
     app: department-service
     type: api
@@ -13,11 +12,11 @@ spec:
       app: department-service
   template:
     metadata:
-labels:
+      labels:
         app: department-service
     spec:
       containers:
       - name: department-service
-        image: alhanouf1/department-service
+        image: bryandollery/department-service
         ports:
         - containerPort: 80
