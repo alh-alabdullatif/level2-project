@@ -38,6 +38,10 @@ spec:
     TOKEN=credentials('f71c8bac-48eb-418d-a18e-866303926386')
   }
   stages {
+    when{changeRequest()
+    }
+ {
+
       stage("Build") {
           steps {
               container('dnd') {
@@ -68,5 +72,6 @@ spec:
               }
           }
       }
+     }
   }
 }
