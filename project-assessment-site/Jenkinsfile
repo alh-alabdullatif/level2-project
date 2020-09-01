@@ -32,10 +32,10 @@ spec:
     }
   }
   environment {
-    CREDS = credentials('Alhanouf-docker-creds')
+    CREDS = credentials('rho-team-docker')
     DOCKER_NAMESPACE = 'alhanouf1'
     SERVICE_NAME = 'project-assessment-site'
-    TOKEN=credentials('f71c8bac-48eb-418d-a18e-866303926386')
+    TOKEN=credentials('1de3f42a-2626-4f08-b1ea-2100e902f577')
   }
   stages {
       stage("Build") {
@@ -64,6 +64,7 @@ spec:
                   sh '''
                       cd $SERVICE_NAME
                       kubectl --token=$TOKEN -n test apply -f deploy.yaml -f service.yaml
+                      ls
                       kubectl --token=$TOKEN -n test apply -f ingress.yaml
 
 
