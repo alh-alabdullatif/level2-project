@@ -38,7 +38,8 @@ spec:
     TOKEN=credentials('1de3f42a-2626-4f08-b1ea-2100e902f577')
   }
   stages {
-    when{changeRequest()
+    stage ("start"){
+      when{changeRequest()
     }
  {
 
@@ -73,6 +74,7 @@ spec:
           }
       }
      }
+  }
   }
 }
 
